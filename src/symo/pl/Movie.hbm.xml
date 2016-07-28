@@ -4,7 +4,7 @@
 <!-- Generated 2016-07-28 16:08:10 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
  <class name="symo.pl.Movie" table="movies">
-  <id column="id" name="id" type="int">
+  <id name="id" type="int">
    <column name="ID"/>
    <generator class="assigned"/>
   </id>
