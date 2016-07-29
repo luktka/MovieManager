@@ -1,21 +1,21 @@
 package symo.pl;
 
 public class Movie {
-
-	private int id;  
+		
+	private String uuid;  
 	private String name;  
 
-	public int getId() {  
-		return id;  
+	public String getUuid() {  
+		return uuid;  
 	}  
-	public void setId(int id) {  
-		this.id = id;  
+	public void setUuid(String uuid) {  
+		this.uuid = uuid;  
 	}  
 	public String getName() {  
 		return name;  
 	}  
-	public void setName(String firstName) {  
-		this.name = firstName;  
+	public void setName(String name) {  
+		this.name = name;  
 	}  
 
 }

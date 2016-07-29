@@ -1,5 +1,7 @@
 package symo.pl;
 
+import java.util.UUID;
+
 import org.hibernate.Session;  
 import org.hibernate.SessionFactory;  
 import org.hibernate.Transaction;  
@@ -21,9 +23,8 @@ public class MovieManager {
 	    //creating transaction object  
 	    Transaction t=session.beginTransaction();  
 	          
-	    Movie m1=new Movie();  
-	    m1.setId(115);  
-	    m1.setName("sonoo");  
+	    Movie m1=new Movie();
+	    m1.setName("hddohddoh33d3");  
 	      
 	    session.persist(m1);//persisting the object  
 	      

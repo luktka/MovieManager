@@ -4,9 +4,9 @@
 <!-- Generated 2016-07-28 16:08:10 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
  <class name="symo.pl.Movie" table="movies">
-  <id name="id" type="int">
-   <column name="ID"/>
-   <generator class="assigned"/>
+  <id name="uuid">
+   <column name="uuid" sql-type="uniqueidentifier" unique="true"/>
+   <generator class="guid"/>
   </id>
   <property generated="never" lazy="false" name="name" type="java.lang.String">
    <column name="name" sql-type="VARCHAR"/>
