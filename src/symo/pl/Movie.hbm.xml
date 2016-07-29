@@ -11,5 +11,20 @@
   <property generated="never" lazy="false" name="name" type="java.lang.String">
    <column name="name" sql-type="VARCHAR"/>
   </property>
+  <property generated="never" lazy="false" name="owner">
+   <column name="owner" sql-type="uniqueidentifier"/>
+  </property>
+ </class>
+ <class name="symo.pl.User" table="users">
+  <id name="uuid">
+   <column name="uuid" sql-type="uniqueidentifier" unique="true"/>
+   <generator class="guid"/>
+  </id>
+  <property generated="never" lazy="false" name="login">
+   <column name="login" sql-type="VARCHAR"/>
+  </property>
+  <property generated="never" lazy="false" name="password">
+   <column name="password" sql-type="VARCHAR"/>
+  </property>
  </class>
 </hibernate-mapping>
