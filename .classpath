@@ -16,5 +16,7 @@
 	<classpathentry kind="lib" path="C:/Users/Lucas/workspace/MovieManager/lib/sqljdbc4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lucas/workspace/MovieManager/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lucas/workspace/MovieManager/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lucas/workspace/MovieManager/lib/lucene-core-5.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lucas/workspace/MovieManager/lib/xml-apis-1.3.03.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

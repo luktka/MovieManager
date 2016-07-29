@@ -8,11 +8,17 @@
    <column name="uuid" sql-type="uniqueidentifier" unique="true"/>
    <generator class="guid"/>
   </id>
-  <property generated="never" lazy="false" name="name" type="java.lang.String">
-   <column name="name" sql-type="VARCHAR"/>
-  </property>
   <property generated="never" lazy="false" name="owner">
    <column name="owner" sql-type="uniqueidentifier"/>
+  </property>
+  <property generated="never" lazy="false" name="title" type="java.lang.String">
+   <column name="title" sql-type="VARCHAR"/>
+  </property>
+  <property name="description">
+   <column name="description" sql-type="VARCHAR"/>
+  </property>
+  <property name="watched">
+   <column name="watched" sql-type="BIT"/>
   </property>
  </class>
  <class name="symo.pl.User" table="users">
@@ -25,6 +31,17 @@
   </property>
   <property generated="never" lazy="false" name="password">
    <column name="password" sql-type="VARCHAR"/>
+  </property>
+ </class>
+ <class name="symo.pl.UserSession" table="sessions">
+  <id name="accessKey">
+   <column name="access_key" sql-type="VARCHAR" unique="true"/>
+  </id>
+  <property generated="never" lazy="false" name="owner">
+   <column name="owner" sql-type="uniqueidentifier"/>
+  </property>
+  <property name="expirationDate">
+   <column name="expiration_date" sql-type="DATE"/>
   </property>
  </class>
 </hibernate-mapping>
